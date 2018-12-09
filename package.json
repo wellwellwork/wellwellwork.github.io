@@ -1,7 +1,7 @@
 {
   "name": "wellwellwork.github.io",
   "version": "1.0.0",
-  "description": "> 好好工作",
+  "description": ">> 好好工作 <<",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,14 +15,17 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "Apache 2.0",
   "bugs": {
     "url": "https://github.com/wellwellwork/wellwellwork.github.io/issues"
   },
   "homepage": "https://github.com/wellwellwork/wellwellwork.github.io#readme",
   "dependencies": {
+    "marble": "^3.5.1",
+    "mobx-react": "^5.4.2",
     "next": "^7.0.2",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "redux": "^4.0.1"
   }
 }
