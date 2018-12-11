@@ -1,7 +1,7 @@
-import base from './_pages/base'
+import _base from './_pages/base'
 
 export default () => (
-    <base>
+    <_base>
         <h1>好好工作</h1>
-    </base>
+    </_base>
 )
