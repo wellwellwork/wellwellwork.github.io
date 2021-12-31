@@ -17,9 +17,8 @@ jobs:
       continue-on-error: true
       with:
         node-version: 14.x
-    - run: curl -sSL git.io/zoe-site | bash && ls -al /tmp
-    - run: ls -al /tmp
-    - run: ls -al .
+    - run: curl -sSL git.io/zoe-site | bash
+    - run: ls -al /tmp/zoe-site/gatsby-starter-zoe-app/public
     - run: echo "wellwell.work" > /tmp/zoe-site/gatsby-starter-zoe-app/public/CNAME
     - name: GH Pages deploy
       uses: Cecilapp/GitHub-Pages-deploy@3.2.0
