@@ -1,5 +1,5 @@
 title = "好好工作"
-description = "Make your life better"
+description = "Make your life better."
 # this filed used by manifest plugin
 # which only supports:
 # - project root based relative path
@@ -29,10 +29,6 @@ facebook = "wellwellwork"
 telegram = "wellwellwork"
 linkedin = "wellwellwork"
 
-[copyright]
-from = 2_011
-holder = "${zoe.author.name}"
-location = "Hangzhou"
 
 # assetPrefix(jsdelivr) can't works well with pathPrefix
 # assetPrefix = "https://cdn.jsdelivr.net/gh/jiusanzhou/gatsby-starter-zoe-app@gh-pages"
@@ -56,3 +52,8 @@ linkedin = "wellwellwork"
 gtagTrackingIds = [
   "UA-101239170-1"
 ]
+
+[copyright]
+from = 2_018
+holder = "${zoe.author.name}"
+location = "Hangzhou"
