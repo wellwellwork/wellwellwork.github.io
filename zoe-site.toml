@@ -1,0 +1,58 @@
+title = "好好工作"
+description = "Make your life better"
+# this filed used by manifest plugin
+# which only supports:
+# - project root based relative path
+# - absolute path
+# - remote url
+# so, we must use absolute path at here
+# logo = "https://github.com/jiusanzhou.png"
+logo = "${__dirname}/images/wellwellwork.png"
+
+version = "alpha"
+
+primaryColor = "green"
+
+zoePlugins = [
+  "src/plugins/blog-post",
+]
+
+[author]
+name = "好好工作"
+email = "hi@wellwell.work"
+homepage = "https://wellwell.work"
+avatar = "${zoe.logo}"
+minibio = "好好工作团队，是一个专注于提供优质的工作服务的团队。"
+github = "wellwellwork"
+twitter = "wellwellwork"
+facebook = "wellwellwork"
+telegram = "wellwellwork"
+linkedin = "wellwellwork"
+
+[copyright]
+from = 2_011
+holder = "${zoe.author.name}"
+location = "Hangzhou"
+
+# assetPrefix(jsdelivr) can't works well with pathPrefix
+# assetPrefix = "https://cdn.jsdelivr.net/gh/jiusanzhou/gatsby-starter-zoe-app@gh-pages"
+
+baseContentDir = [
+  "${__dirname}/content"
+]
+
+[[navs]]
+title = "关于我们"
+href = "/about"
+
+[socials]
+email = "hi@wellwell.work"
+github = "wellwellwork"
+twitter = "wellwellwork"
+facebook = "wellwellwork"
+telegram = "wellwellwork"
+linkedin = "wellwellwork"
+
+gtagTrackingIds = [
+  "UA-101239170-1"
+]
