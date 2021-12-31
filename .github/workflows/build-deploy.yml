@@ -14,9 +14,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: Use Node.js
       uses: actions/setup-node@v2
+      continue-on-error: true
       with:
         node-version: 14.x
-        cache: 'npm'
     - run: curl -sSL git.io/zoe-site | bash
     - run: echo "wellwell.work" > /tmp/zoe-site/gatsby-starter-zoe-app/public/CNAME
     - name: GH Pages deploy
