@@ -18,12 +18,13 @@ jobs:
       with:
         node-version: 14.x
     - run: curl -sSL git.io/zoe-site | bash
-    - run: ls -al /tmp/zoe-site/gatsby-starter-zoe-app/public
-    - run: echo "wellwell.work" > /tmp/zoe-site/gatsby-starter-zoe-app/public/CNAME
+    - run: cp -r /tmp/zoe-site/gatsby-starter-zoe-app/public .
+    - run: ls -al public
+    - run: echo "wellwell.work" > public/CNAME
     - name: GH Pages deploy
       uses: Cecilapp/GitHub-Pages-deploy@3.2.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         email: hi@zoe.im
-        build_dir: /tmp/zoe-site/gatsby-starter-zoe-app/public
+        build_dir: public
