@@ -1,5 +1,5 @@
 title = "好好工作"
-description = "Make your life better."
+description = "让你的生活更美好"
 # this filed used by manifest plugin
 # which only supports:
 # - project root based relative path
@@ -15,16 +15,15 @@ zoePlugins = [ "src/plugins/blog-post" ]
 gtagTrackingIds = [ "UA-101239170-1" ]
 
 [author]
-name = "好好工作"
-email = "hi@wellwell.work"
-homepage = "https://wellwell.work"
-avatar = "${zoe.logo}"
-minibio = "好好工作团队，是一个专注于提供优质的工作服务的团队。"
-github = "wellwellwork"
-twitter = "wellwellwork"
-facebook = "wellwellwork"
-telegram = "wellwellwork"
-linkedin = "wellwellwork"
+name = "Zoe"
+email = "hi@zoe.im"
+homepage = "https://zoe.im"
+avatar = "https://github.com/jiusanzhou.png"
+github = "jiusanzhou"
+twitter = "jiusanzhou"
+facebook = "jiusanzhou"
+telegram = "jiusanzhou"
+linkedin = "jiusanzhou"
 
 [[navs]]
 title = "关于我们"
@@ -42,3 +41,19 @@ linkedin = "wellwellwork"
 from = 2_018
 holder = "${zoe.author.name}"
 location = "Hangzhou"
+
+[layouts]
+default = """
+maxWidth: ${zoe.maxWidth} # ["100%", "80%", "80%", "80%", "60rem"]
+header:
+  logoProps:
+    textColor: 'unset'
+footer:
+  disableBorder: true
+  disableGotop: true
+  disableLogo: false
+  disableSocials: false
+  disableLinks: false
+  logoProps:
+    textColor: 'unset'
+"""
