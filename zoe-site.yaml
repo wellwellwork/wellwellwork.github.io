@@ -1,0 +1,250 @@
+# 好好工作 · WellWell Work — 一家追求"好好工作"的独立公司
+
+title: 好好工作 · WellWell Work
+description: 一家追求好好工作的独立公司 — Work that works.
+url: https://wellwell.work
+logo: https://github.com/jiusanzhou.png
+lang: zh-CN
+
+# 公司
+author:
+  name: Zoe
+  email: hi@wellwell.work
+  homepage: https://zoe.im
+
+organization:
+  name: 好好工作 · WellWell Work
+  url: https://wellwell.work
+
+copyright:
+  from: 2018
+  holder: WellWell Work
+
+# 主题：暖橙绿色调，"好好工作 = 好好生活" 的暖意
+theme: default
+
+# 导航
+navs:
+  - title: 产品 · Products
+    href: /#products
+  - title: 故事 · Story
+    href: /#story
+  - title: 博客 · Blog
+    href: /blog
+  - title: 关于 · About
+    href: /about
+
+# 社交
+socials:
+  github: https://github.com/wellwellwork
+  twitter: https://twitter.com/jiusanzhou
+  email: hi@wellwell.work
+
+# Footer 链接
+links:
+  - title: wuma · 无码
+    category: 产品 / Products
+    href: https://wuma.dev
+  - title: zshare · 资源分享
+    category: 产品 / Products
+    href: https://zshare.wencai.app
+  - title: motion · 知识库
+    category: 产品 / Products
+    href: https://motion.wencai.app
+  - title: AI Tools
+    category: 产品 / Products
+    href: https://tools.wencai.app
+
+  - title: GitHub
+    category: 关于 / About
+    href: https://github.com/wellwellwork
+  - title: Twitter / X
+    category: 关于 / About
+    href: https://twitter.com/jiusanzhou
+  - title: Zoe 个人站
+    category: 关于 / About
+    href: https://zoe.im
+  - title: 联系 · Email
+    category: 关于 / About
+    href: mailto:hi@wellwell.work
+
+# 博客
+blog:
+  title: 博客 · Build in Public
+  description: 独立产品、复利杠杆、好好工作的日常笔记
+  basePath: /blog
+  postsPerPage: 10
+
+# 内容
+contentDirs:
+  - content
+
+contentTypes:
+  - name: post
+    path: posts
+    template: post
+  - name: page
+    path: pages
+    template: page
+
+# 产品列表 — 也可以在 sections 里直接 inline，这里集中定义方便复用
+products:
+  - slug: wuma
+    name: wuma · 无码
+    tagline: AI 落地页生成器 / Code that dances. Apps that ship.
+    description: 用 AI 几分钟生成专业的产品落地页，海外 indie hacker 与国内独立开发者的轻量级武器。
+    url: https://wuma.dev
+    status: building
+    launchedAt: "2026-06"
+    category: AI · SaaS
+
+  - slug: zshare
+    name: zshare · 资源分享
+    tagline: 综合资源导航站 / Find what's worth sharing.
+    description: 知识、网盘、工具、教程一站收录，2600+ 条资源持续更新中。
+    url: https://zshare.wencai.app
+    status: live
+    launchedAt: "2025-09"
+    category: 内容 · Site
+
+  - slug: motion
+    name: motion · 知识库
+    tagline: 开源知识库编辑器 / Knowledge that flows.
+    description: 纯前端、数据存 GitHub 的轻量知识库工具，零后端、可自托管。
+    url: https://motion.wencai.app
+    status: live
+    launchedAt: "2025-12"
+    category: 开源 · OSS
+
+  - slug: tools
+    name: AI Tools Directory
+    tagline: AI 工具集 / Tools that just work.
+    description: 精选 AI 工具导航，按场景与分类整理，帮助开发者快速找到趁手的家伙。
+    url: https://tools.wencai.app
+    status: live
+    launchedAt: "2025-11"
+    category: 内容 · Site
+
+# Homepage Sections
+sections:
+  - type: hero
+    badge: "🐾 Independent · Building since 2018"
+    greeting: 好好工作
+    typingTexts:
+      - 好好生活
+      - 做想用的工具
+      - 复利杠杆
+      - Work that works.
+    description: 一家追求"好好工作"的独立公司。我们做自己想用的工具，慢慢长出可持续的事业。An independent studio building tools we want to use ourselves.
+    cta:
+      - text: 看看产品 / See Products
+        href: "#products"
+      - text: 关注 build-in-public
+        href: https://twitter.com/jiusanzhou
+        variant: outline
+    align: center
+
+  - type: products
+    title: 产品 · Products
+    description: 我们正在做的、还在长大的、和已经长出来的小生意。 What we ship.
+    limit: 6
+
+  - type: features
+    title: 我们怎么工作 · How we work
+    description: 三件小事，一直在做。
+    columns: 3
+    style: cards
+    items:
+      - icon: "🌱"
+        title: 做自己想用的
+        description: 不追风口、不追大盘。我们做的每一个工具，都先满足自己的真实需求，再考虑别人。
+      - icon: "🔁"
+        title: 复利 · 不是冲刺
+        description: 慢一点，长一点。把时间花在能持续滚雪球的事情上，比短平快重要。
+      - icon: "🪟"
+        title: Build in Public
+        description: 在 X 上记录每一步：上线、踩坑、收入、复盘。透明做事，吸引同频的人。
+
+  - type: stats
+    items:
+      - value: "4"
+        label: 在做的产品 / Products
+      - value: "2018"
+        label: 起步年份 / Since
+      - value: "1+🐾"
+        label: 团队规模 / Team
+      - value: "∞"
+        label: 想做的事 / Ideas
+
+  - type: posts
+    title: 博客 · Build-in-Public
+    description: 上线、踩坑、收入复盘，写给未来的自己。
+    limit: 4
+    mode: grid
+
+  - type: cta
+    title: 一起好好工作 · Let's work well together
+    description: 喜欢我们的产品？想合作、想聊聊、想给点意见？一封邮件、一条 DM 都行。
+    cta:
+      - text: 发邮件 / Email
+        href: mailto:hi@wellwell.work
+      - text: Twitter / X
+        href: https://twitter.com/jiusanzhou
+        variant: outline
+    style: gradient
+
+# 中文标签覆盖
+labels:
+  blog: 博客
+  blog.archives: 归档
+  blog.tags: 标签
+  blog.drafts: 草稿
+  blog.back: 返回博客
+  blog.readMore: 阅读全文
+  blog.viewMore: 查看更多
+  blog.allPosts: 全部文章
+  blog.heroDescription: 独立产品、复利杠杆、好好工作的日常笔记
+  blog.minRead: 分钟阅读
+  blog.dateFormat: yyyy 年 MM 月 dd 日
+  blog.searchPlaceholder: 搜索文章...
+  blog.featured: 精选
+  blog.pinnedPost: 置顶
+
+  projects: 项目
+  projects.description: 我们的开源项目
+  products: 产品
+  products.description: 我们做的、想做的、已经做出来的小生意
+  products.viewMore: 查看全部
+  products.count: "{count} 个产品"
+
+  loading: 加载中...
+  notFound.title: 页面走丢了
+  notFound.description: 抱歉，您访问的页面不存在或已被移除。
+  notFound.hint: 可能是链接过期了，或者您输入了错误的地址。
+  notFound.home: 返回首页
+  notFound.blog: 浏览博客
+
+  contact: 联系我们
+  contact.description: 一封邮件、一条 DM，都可以
+  contact.form.name: 姓名
+  contact.form.namePlaceholder: 你的名字
+  contact.form.email: 邮箱
+  contact.form.emailPlaceholder: your@email.com
+  contact.form.message: 留言
+  contact.form.messagePlaceholder: 想聊点什么...
+  contact.form.submit: 发送
+  contact.form.sent: 已发送！我们会尽快回复。
+
+  home.products: 产品
+  home.products.description: 我们做的、想做的、已经做出来的小生意
+  home.latestPosts: 最新文章
+  home.latestPosts.description: 上线、踩坑、收入复盘
+
+  error.title: 出错了
+  error.description: 发生了意外错误，请重试。
+  error.retry: 重试
+  error.home: 返回首页
+
+  header.more: 更多
+  footer.wechatQR: 微信二维码
+  footer.wechatScan: 扫码加微信
