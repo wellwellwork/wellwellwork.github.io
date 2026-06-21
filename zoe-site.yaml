@@ -7,11 +7,11 @@ logo: /logo.svg
 image: /og-image.png
 lang: zh-CN
 
-# 公司
+# 公司（author 字段被框架用作元数据 — 此处填公司而非个人）
 author:
-  name: Zoe
+  name: WellWell Work
   email: hi@wellwell.work
-  homepage: https://zoe.im
+  homepage: https://wellwell.work
 
 organization:
   name: 好好工作 · WellWell Work
@@ -62,9 +62,6 @@ links:
   - title: Twitter / X
     category: 关于 / About
     href: https://twitter.com/jiusanzhou
-  - title: Zoe 个人站
-    category: 关于 / About
-    href: https://zoe.im
   - title: 联系 · Email
     category: 关于 / About
     href: mailto:hi@wellwell.work
@@ -187,12 +184,26 @@ sections:
     title: 一起好好工作 · Let's work well together
     description: 喜欢我们的产品？想合作、想聊聊、想给点意见？一封邮件、一条 DM 都行。
     cta:
-      - text: 发邮件 / Email
+      - text: hi@wellwell.work
         href: mailto:hi@wellwell.work
       - text: Twitter / X
         href: https://twitter.com/jiusanzhou
         variant: outline
     style: gradient
+
+  - type: contact
+    style: simple
+    email: hi@wellwell.work
+    links:
+      - title: GitHub
+        href: https://github.com/wellwellwork
+        icon: github
+      - title: Twitter / X
+        href: https://twitter.com/jiusanzhou
+        icon: twitter
+      - title: Email
+        href: mailto:hi@wellwell.work
+        icon: mail
 
 # 中文标签覆盖
 labels:
