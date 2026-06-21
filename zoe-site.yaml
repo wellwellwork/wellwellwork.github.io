@@ -24,7 +24,17 @@ copyright:
 # 主题：暖橙绿色调，"好好工作 = 好好生活" 的暖意
 theme: wellwell
 
-# 导航
+verification:
+  # 取得 token 后取消注释填入即可（自动渲染 <meta> 到 <head>）
+  # google: <your-google-site-verification-token>
+  # bing: <your-msvalidate-token>
+  # baidu: <your-baidu-token>
+  # yandex: <your-yandex-token>
+  # "360": <your-360-token>
+  # sogou: <your-sogou-token>
+  # other:
+  #   anything: any-value
+
 navs:
   - title: 产品 · Products
     href: /#products
