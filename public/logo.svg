@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <defs>
-    <linearGradient id="wgF" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+    <linearGradient id="wg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#E68A3F"/>
       <stop offset="1" stop-color="#4FA86F"/>
     </linearGradient>
   </defs>
-  <rect width="64" height="64" rx="14" fill="url(#wgF)"/>
+  <rect width="64" height="64" rx="14" fill="url(#wg)"/>
   <path d="M14 22 L19 44 L24 30 L29 44 L34 22" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
   <path d="M30 22 L35 44 L40 30 L45 44 L50 22" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.85"/>
 </svg>

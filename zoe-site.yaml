@@ -3,7 +3,8 @@
 title: 好好工作 · WellWell Work
 description: 一家追求好好工作的独立公司 — Work that works.
 url: https://wellwell.work
-logo: https://github.com/jiusanzhou.png
+logo: /logo.svg
+image: /og-image.png
 lang: zh-CN
 
 # 公司
@@ -21,7 +22,7 @@ copyright:
   holder: WellWell Work
 
 # 主题：暖橙绿色调，"好好工作 = 好好生活" 的暖意
-theme: default
+theme: wellwell
 
 # 导航
 navs:
