@@ -48,7 +48,7 @@ navs:
 # 社交
 socials:
   github: https://github.com/wellwellwork
-  twitter: https://twitter.com/jiusanzhou
+  twitter: https://twitter.com/wellwellwork
   email: hi@wellwell.work
 
 # Footer 链接
@@ -71,7 +71,7 @@ links:
     href: https://github.com/wellwellwork
   - title: Twitter / X
     category: 关于 / About
-    href: https://twitter.com/jiusanzhou
+    href: https://twitter.com/wellwellwork
   - title: 联系 · Email
     category: 关于 / About
     href: mailto:hi@wellwell.work
@@ -148,7 +148,7 @@ sections:
       - text: 看看产品 / See Products
         href: "#products"
       - text: 关注 build-in-public
-        href: https://twitter.com/jiusanzhou
+        href: https://twitter.com/wellwellwork
         variant: outline
     align: center
 
@@ -197,7 +197,7 @@ sections:
       - text: hi@wellwell.work
         href: mailto:hi@wellwell.work
       - text: Twitter / X
-        href: https://twitter.com/jiusanzhou
+        href: https://twitter.com/wellwellwork
         variant: outline
     style: gradient
 
@@ -209,7 +209,7 @@ sections:
         href: https://github.com/wellwellwork
         icon: github
       - title: Twitter / X
-        href: https://twitter.com/jiusanzhou
+        href: https://twitter.com/wellwellwork
         icon: twitter
       - title: Email
         href: mailto:hi@wellwell.work

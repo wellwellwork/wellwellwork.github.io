@@ -33,7 +33,7 @@ We're an independent studio building tools we want to use ourselves.
 ## 联系我们 · Get in touch
 
 - 📧 [hi@wellwell.work](mailto:hi@wellwell.work)
-- 🐦 Twitter / X — [@jiusanzhou](https://twitter.com/jiusanzhou)
+- 🐦 Twitter / X — [@wellwellwork](https://twitter.com/wellwellwork)
 - 🐙 GitHub — [@wellwellwork](https://github.com/wellwellwork)
 
 ---
