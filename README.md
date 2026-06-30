@@ -1,179 +1,54 @@
-# nextjs-starter-zoe-app
+# wellwell.work
 
-> A config-driven, production-ready website starter built with Next.js, shadcn/ui, and Tailwind CSS. Ship landing pages, SaaS sites, developer tools, and personal blogs — all from a single YAML file.
+> 好好工作 · WellWell Work — 一家追求"好好工作"的独立公司主页
 
-<div align="center">
+托管在 [wellwell.work](https://wellwell.work)，使用 [nextjs-starter-zoe-app](https://github.com/jiusanzhou/nextjs-starter-zoe-app) 作为主题引擎，通过 GitHub Actions 自动构建部署到 GitHub Pages。
 
-[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19-blue)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
+## 结构
 
-</div>
-
----
-
-## Features
-
-- **Config-Driven** — One `zoe-site.yaml` controls site metadata, navigation, sections, themes, and content
-- **11 Section Types** — Hero, Features, Logos, Testimonials, Stats, Pricing, FAQ, CTA, Posts, Projects, Contact
-- **3 Product-Grade Themes** — Stripe (purple-blue gradient), Vercel (minimal black & white), Linear (dark tech)
-- **Static Export** — Pure HTML output, deploy anywhere (Vercel, Netlify, GitHub Pages)
-- **Blog System** — MDX/Markdown posts with tags, archives, pinned posts, and drafts
-- **Dark Mode** — System-aware light/dark toggle
-- **SEO Ready** — Auto-generated metadata, Open Graph, sitemap, robots.txt
-- **Fully Typed** — TypeScript end-to-end
-
-## Themes
-
-| Theme | Style | Best For |
-|-------|-------|----------|
-| `stripe` | Purple-blue gradient, vibrant | SaaS products, landing pages |
-| `vercel` | Pure black & white, minimal | Developer tools, documentation |
-| `linear` | Dark, techy, sleek | AI/ML startups, tech products |
-| `default` | Elegant neutral tones | Personal sites, blogs |
-| `terminal` | Green-on-black, retro | Hacker aesthetic |
-
-Set in config:
-
-```yaml
-theme: stripe
+```
+.
+├── zoe-site.yaml         # 站点配置（标题、导航、Hero、产品、Stats 等）
+├── content/
+│   ├── posts/            # 博客文章（Markdown）
+│   └── pages/            # 独立页面（如 about）
+├── public/               # 静态资源（图片、favicon、CNAME）
+└── .github/workflows/
+    └── deploy.yml        # CI/CD：拉框架 → 注入数据 → build → 发布
 ```
 
-## Section Types
+## 工作方式
 
-Build your homepage by composing sections in `zoe-site.yaml`:
+仓库**只保留数据**，不包含框架代码。每次 push 时，GitHub Actions：
 
-| Section | Description |
-|---------|-------------|
-| `hero` | Main banner with badge, typing animation, CTA buttons, optional image/video |
-| `features` | Feature grid (cards/icons/bento style, 2-4 columns) |
-| `logos` | Logo bar (scrolling or grid) |
-| `testimonials` | Customer quotes with avatar, role, company |
-| `stats` | Key metrics display |
-| `pricing` | Pricing plans with highlighted tier |
-| `faq` | Accordion Q&A |
-| `cta` | Call-to-action (simple/gradient/card) |
-| `posts` | Latest blog posts |
-| `projects` | GitHub project showcase |
-| `contact` | Contact information |
+1. Checkout 本仓库（`site/`）
+2. Checkout 主题框架 [nextjs-starter-zoe-app](https://github.com/jiusanzhou/nextjs-starter-zoe-app)（`theme/`）
+3. 把 `site/zoe-site.yaml`、`site/content/*`、`site/public/*` 注入到 `theme/`
+4. `pnpm install && pnpm build`
+5. 把 `theme/out/` 部署到 GitHub Pages
 
-## Quick Start
+这样框架升级自动跟随，仓库只关心内容。
+
+## 主题
+
+当前使用 **`wellwell`** 主题（暖橙 + 自然绿，纸感杂志气质），定义在框架的 `src/styles/themes.css`。
+
+切换主题：修改 `zoe-site.yaml` 中的 `theme:` 字段。
+
+## 本地预览
+
+如需本地预览，可手动 clone 框架并注入数据：
 
 ```bash
-# Clone
-npx degit jiusanzhou/nextjs-starter-zoe-app my-site
-cd my-site
-
-# Install
+git clone https://github.com/jiusanzhou/nextjs-starter-zoe-app theme
+cp -r content/* theme/content/
+cp -r public/* theme/public/
+cp zoe-site.yaml theme/
+cd theme
 pnpm install
-
-# Dev
 pnpm dev
-
-# Build (static export to /out)
-pnpm build
 ```
-
-Then edit `zoe-site.yaml` to make it yours.
-
-## Example Configurations
-
-The `examples/` directory includes ready-to-use configs for different use cases:
-
-| File | Site | Theme | Description |
-|------|------|-------|-------------|
-| `personal-site.yaml` | Zoe | default | Personal blog & portfolio |
-| `saas-product.yaml` | FlowAI | stripe | AI workflow automation product |
-| `developer-tool.yaml` | DevKit | vercel | Minimal developer tool site |
-| `startup.yaml` | NeuralSpace | linear | AI infrastructure startup |
-
-Copy any example to use it:
-
-```bash
-cp examples/saas-product.yaml zoe-site.yaml
-```
-
-## Configuration
-
-All configuration lives in `zoe-site.yaml`:
-
-```yaml
-title: My Product
-description: One-line description
-theme: stripe
-lang: en
-
-navs:
-  - title: Product
-    href: /#features
-  - title: Pricing
-    href: /#pricing
-
-sections:
-  - type: hero
-    badge: "New"
-    greeting: Build something great
-    description: Your product description here
-    cta:
-      - text: Get Started
-        href: /signup
-    align: left
-
-  - type: features
-    title: Features
-    columns: 3
-    style: cards
-    items:
-      - icon: "\u26A1"
-        title: Fast
-        description: Blazing fast performance
-
-  - type: pricing
-    title: Pricing
-    plans:
-      - name: Free
-        price: "$0"
-        features: [Feature A, Feature B]
-      - name: Pro
-        price: "$29"
-        features: [Everything in Free, Feature C]
-        highlighted: true
-```
-
-See the [example configs](./examples/) for complete reference.
-
-## Content
-
-Add Markdown/MDX files to `content/`:
-
-```
-content/
-  posts/       # Blog posts
-  pages/       # Static pages (about, etc.)
-```
-
-Post frontmatter:
-
-```yaml
----
-title: My Post
-date: 2024-01-01
-tags: [ai, automation]
-published: true
----
-```
-
-## Tech Stack
-
-- **Next.js 16** — App Router, React Server Components, Static Export
-- **React 19** — Latest concurrent features
-- **Tailwind CSS 4** — Utility-first styling
-- **shadcn/ui** — Radix + Tailwind component library
-- **MDX 3** — Markdown with JSX
-- **TypeScript 5** — Full type safety
 
 ## License
 
-MIT © [Zoe](https://zoe.im)
+[MIT](./LICENSE)
